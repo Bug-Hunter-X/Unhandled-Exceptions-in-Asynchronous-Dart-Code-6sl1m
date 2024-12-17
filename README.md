@@ -1,0 +1,3 @@
+# Unhandled Exceptions in Asynchronous Dart Code
+
+This example demonstrates a common issue in Dart: unhandled exceptions in asynchronous operations. The `fetchData` function makes a network request and handles potential errors. However, the `rethrow` statement propagates any caught exceptions up the call stack, allowing them to be caught by higher-level error handlers, such as the `main` function.  This ensures that errors don't silently fail and are properly reported or handled.
